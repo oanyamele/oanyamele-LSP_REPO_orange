@@ -1,8 +1,20 @@
 # Ignore Java compiled files
 *.class
 
+# Ignore Eclipse/IDE settings
+.project
+.classpath
+.settings/
+bin/
+out/
+
 # Ignore macOS system files
 .DS_Store
 
-# Ignore VS Code settings folder
+# Ignore VS Code workspace and settings folder
 .vscode/
+*.code-workspace
+
+# Ignore logs and temporary files
+*.log
+*.tmp

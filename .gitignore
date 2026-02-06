@@ -1,0 +1,8 @@
+# Ignore Java compiled files
+*.class
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore VS Code settings folder
+.vscode/

@@ -11,6 +11,7 @@ Transponder
 Packet Decoder
 Assumptions (if any):
 Aircraft within range continuously broadcast transponder packets
+
 CRC Card
 Class: Packet Decoder
 Responsibilities:
@@ -23,6 +24,7 @@ Aircraft
 Aircraft Registry
 Assumptions (if any):
 N/A
+
 CRC Card
 Class: Aircraft
 Responsibilities:
@@ -34,6 +36,7 @@ Packet Decoder
 Aircraft Registry
 Assumptions (if any):
 Each aircraft is uniquely identifiable by its flight number
+
 CRC Card
 Class: Aircraft Registry
 Responsibilities:
@@ -42,12 +45,13 @@ Update aircraft records when new flight data arrives
 Provide aircraft data to system components requesting it
 Collaborators (if any):
 Aircraft
-PacketDecoder
-DisplayService
-SafetyMonitor
-ControllerQuery
+Packet Decoder
+Display Service
+Safety Monitor
+Controller Query
 Assumptions (if any):
 Only aircraft currently being tracked by ATC are stored in the registry
+
 CRC Card
 Class: Display Service
 Responsibilities:
@@ -59,6 +63,7 @@ Aircraft Registry
 Controller Display
 Assumptions (if any):
 N/A
+
 CRC Card
 Class: Safety Monitor
 Responsibilities:
@@ -71,6 +76,7 @@ Aircraft
 Controller Display
 Assumptions (if any):
 N/A
+
 CRC Card
 Class: Controller Display
 Responsibilities:
@@ -84,6 +90,7 @@ Controller Query
 Aircraft Registry
 Assumptions (if any):
 N/A
+
 CRC Card
 Class: Controller Query
 Responsibilities:
